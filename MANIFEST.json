@@ -1,0 +1,22 @@
+{
+  "package": "Gemini common update for AIDEOM-VN exercises 1-12",
+  "pages": [
+    "bai01.py",
+    "bai02.py",
+    "bai03.py",
+    "bai04.py",
+    "bai05.py",
+    "bai06.py",
+    "bai07.py",
+    "bai08.py",
+    "bai09.py",
+    "bai10.py",
+    "bai11.py",
+    "bai12.py"
+  ],
+  "shared_files": [
+    "services/ai_agent.py",
+    "ui/ai_panel.py",
+    ".streamlit/secrets.toml.example"
+  ]
+}

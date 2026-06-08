@@ -1,0 +1,22 @@
+GÓI BÀI 7-10 — VN AIDEOM-VN
+
+1. Giải nén vào thư mục:
+   C:\AIDEOM_VN\AIDEOM_VN_Final
+
+2. Cài thư viện:
+   python -m pip install pymoo pulp scipy
+
+3. Thêm vào requirements.txt:
+   pymoo
+   pulp
+   scipy
+
+4. Kiểm tra cú pháp:
+   python -m py_compile core\bai07_model.py core\bai08_model.py core\bai09_model.py core\bai10_model.py
+   python -m py_compile pages\bai07.py pages\bai08.py pages\bai09.py pages\bai10.py
+
+5. Chạy kiểm thử:
+   python -m pytest -q tests\test_bai07_10.py
+
+6. Chạy web:
+   python -m streamlit run app.py

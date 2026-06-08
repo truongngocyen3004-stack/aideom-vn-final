@@ -1,0 +1,56 @@
+GÓI SỬA GEMINI CHUNG CHO BÀI 1–12
+=================================
+
+Gói này ghi đè:
+- services\ai_agent.py
+- pages\bai01.py ... pages\bai12.py
+
+Gói bổ sung:
+- ui\ai_panel.py
+- .streamlit\secrets.toml.example
+- tests\test_gemini_common.py
+
+TÍNH NĂNG CHUNG
+---------------
+1. Mỗi bài có key Gemini riêng.
+2. Mỗi bài tự chạy mô hình với bộ tham số mặc định.
+3. Khi tham số thay đổi, kết quả Gemini cũ được xóa.
+4. Tự thử lại khi gặp 429, 500, 502, 503, 504 hoặc timeout.
+5. Không tự lặp vô hạn làm tốn quota.
+6. Prompt quá dài được rút gọn an toàn.
+7. Đọc API key từ st.secrets hoặc biến môi trường.
+8. Hỗ trợ model dự phòng do người dùng tự cấu hình.
+9. Bài 7 dùng bản giao diện đã sửa màu chữ Sankey và bảng.
+
+CÀI ĐẶT
+-------
+1. Sao lưu dự án hiện tại.
+2. Giải nén ZIP trực tiếp vào:
+   C:\AIDEOM_VN\AIDEOM_VN_Final
+3. Chọn ghi đè file.
+4. Cài:
+   python -m pip install -U google-genai
+5. Thêm google-genai vào requirements.txt.
+6. Không ghi đè .streamlit\secrets.toml đang có.
+7. Kiểm tra:
+   python -m compileall -q services ui pages
+8. Chạy:
+   python -m streamlit run app.py
+
+CẤU HÌNH SECRETS
+----------------
+File:
+C:\AIDEOM_VN\AIDEOM_VN_Final\.streamlit\secrets.toml
+
+Nội dung tối thiểu:
+GEMINI_API_KEY = "API_KEY_CUA_BAN"
+GEMINI_MODEL = "gemini-2.5-flash"
+
+Nếu gặp 503:
+- Website sẽ tự thử lại.
+- Nếu vẫn lỗi, chờ 30–60 giây rồi bấm lại.
+- Không bấm liên tục nhiều lần vì có thể gây 429.
+
+LƯU Ý
+-----
+Gói này không thay đổi các file core\baiXX_model.py.

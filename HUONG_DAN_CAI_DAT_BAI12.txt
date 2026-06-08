@@ -1,0 +1,36 @@
+GÓI BÀI 12 — AIDEOM-VN TÍCH HỢP
+
+1. Giải nén vào:
+   C:\AIDEOM_VN\AIDEOM_VN_Final
+
+2. Kiểm tra hai file:
+   core\bai12_model.py
+   pages\bai12.py
+
+3. Kiểm tra cú pháp:
+   python -m py_compile core\bai12_model.py pages\bai12.py
+
+4. Chạy test:
+   python -m pytest -q tests\test_bai12.py
+
+5. Chạy web:
+   python -m streamlit run app.py
+
+6. Mở menu:
+   Bài 12 — AIDEOM tích hợp
+
+7. Kiểm tra các tab:
+   Tổng quan
+   Phân bổ
+   Kịch bản
+   Sẵn sàng vùng
+   Lao động
+   Rủi ro
+   Tích hợp 11 bài
+   Bàn giao
+   Phân tích AI
+
+LƯU Ý:
+- Bài 12 là dashboard tích hợp, không thay thế kết quả chi tiết của Bài 1–11.
+- Tab Tích hợp 11 bài tự kiểm tra file core/page theo quy ước baiXX.
+- Sau khi hoàn thành Bài 12, cần chuẩn hóa AI đồng loạt cho cả 12 bài.

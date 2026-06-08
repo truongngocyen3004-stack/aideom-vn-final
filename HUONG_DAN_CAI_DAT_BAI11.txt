@@ -1,0 +1,24 @@
+GÓI BÀI 11 — Q-LEARNING VÀ DQN
+
+1. Giải nén vào:
+   C:\AIDEOM_VN\AIDEOM_VN_Final
+
+2. Cài phần bắt buộc:
+   python -m pip install gymnasium
+
+3. Cài DQN mở rộng nếu máy hỗ trợ:
+   python -m pip install stable-baselines3 torch
+
+4. Kiểm tra cú pháp:
+   python -m py_compile core\bai11_model.py pages\bai11.py
+
+5. Chạy test:
+   python -m pytest -q tests\test_bai11.py
+
+6. Chạy web:
+   python -m streamlit run app.py
+
+LƯU Ý:
+- Q-learning tabular là kết quả chính theo đề.
+- DQN là phần mở rộng và có thể không cài được trên một số bản Python 3.13.
+- Nếu DQN không chạy, web vẫn hoàn thành 11.3.1–11.3.4.

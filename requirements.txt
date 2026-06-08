@@ -1,0 +1,13 @@
+streamlit
+pandas
+numpy
+plotly
+scipy
+pulp
+pymoo
+cvxpy
+matplotlib
+scikit-learn
+google-genai
+gymnasium
+openpyxl

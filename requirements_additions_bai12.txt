@@ -1,0 +1,5 @@
+# Bài 12 không yêu cầu thư viện mới ngoài:
+# streamlit
+# pandas
+# numpy
+# plotly
